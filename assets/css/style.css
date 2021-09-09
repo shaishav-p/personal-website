@@ -1,0 +1,170 @@
+.flex-grid{
+    margin-top: 20px;
+
+    display: grid;
+    justify-items: center;
+    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "picture-and-summary"
+        "experience"
+        "education"
+        "hobbies";
+}
+
+@media(min-width: 700px){
+    .flex-grid{
+        grid-template-columns: repeat(2, 1fr);  /* https://css-tricks.com/introduction-fr-css-unit/ */
+        justify-items: start;
+        grid-template-areas: 
+        "picture-and-summary experience "
+        "picture-and-summary education"
+        "picture-and-summary hobbies";
+    }
+    .div.picture-and-summary{
+        margin-bottom: 200px;
+    }
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #97bada;
+    background-color: #0b2a50;
+
+    /*change background color*/
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/*change background color*/
+@keyframes bgcolor {
+    0% {
+        background-color: #223a58;
+    }
+
+    30% {
+        background-color: #153358;
+    }
+
+    60% {
+        background-color: #0a2b54;
+    }
+
+    90% {
+        background-color: #04244c;
+    }
+
+    100% {
+        background-color: #031d3e;
+    }
+}
+
+div.picture-and-summary{
+    margin-top: 60px;
+    grid-area: picture-and-summary;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+img.avatar{
+    width: 214px;
+    height: 220px;
+    border-radius: 50%;
+    /* border: 8px outset #2e74b5; /* 8px outset rgb(89 114 128 / 63%) rgb(102 155 166) */
+    
+}
+
+img.avatar:hover{
+    animation: rotate 3s linear;
+}
+
+/* Rotate using @keyframes */
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.light-blue{
+    color: #5ca4e2;
+    font-weight: 300;
+}
+
+.lighter-blue{
+    color: #97bada;
+}
+
+.dark-blue{
+    color: #2e74b5;
+    font-weight: 500;
+}
+
+p.name{
+    font-size: 50px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 13%;
+    padding-right: 12%;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+}
+
+.heading{
+    font-size: 31px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.sub-heading{
+    font-size: 25px;
+}
+
+.sub-sub-heading{
+    font-size: 15px;
+}
+
+.subtitle{
+    font-size: 12px;
+}
+
+.no-margin-padding{
+    margin: 0px;
+    padding: 0px;
+}
+
+.experience{
+    margin-top: 50px;
+    grid-area: experience;
+}
+
+.education{
+    grid-area: education;
+}
+
+.hobbies{
+    grid-area: hobbies;
+}
+
