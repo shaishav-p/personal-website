@@ -137,6 +137,10 @@ p.name{
     color: #97bada;
 }
 
+.logo:hover{
+    color: #8098ad;
+}
+
 .heading{
     font-size: 31px;
     margin-top: 35px;
@@ -171,6 +175,7 @@ p.name{
 
 .hobbies{
     grid-area: hobbies;
+    max-width: fit-content;
 }
 
 .list-of-hobbies{
