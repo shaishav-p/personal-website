@@ -103,7 +103,7 @@ img.avatar:hover{
 
 .light-blue{
     color: #5ca4e2;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .lighter-blue{
@@ -117,7 +117,7 @@ img.avatar:hover{
 
 p.name{
     font-size: 50px;
-    font-weight: 550;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -135,6 +135,7 @@ p.name{
     width: 35px;
     height: 35px;
     color: #97bada;
+    padding: 9px;
 }
 
 .logo:hover{
