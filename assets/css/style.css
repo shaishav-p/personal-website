@@ -13,7 +13,7 @@
         "hobbies";
 }
 
-@media(min-width: 900px) and (min-height: 600px){
+@media(min-width: 900px) and (min-height: 670px){
     .flex-grid{
         margin-top: auto;
         grid-template-columns: repeat(2, 1fr);  /* https://css-tricks.com/introduction-fr-css-unit/ */
