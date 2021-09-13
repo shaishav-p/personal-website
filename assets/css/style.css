@@ -26,6 +26,15 @@
     .div.picture-and-summary{
         margin-bottom: 200px;
     }
+	
+	body{
+		margin-top: 0vh;
+	}
+	@media(min-height: 680px){
+		body{
+			margin-top: 5vh;
+		}
+	}
 
 }
 
@@ -76,8 +85,8 @@ div.picture-and-summary{
 }
 
 img.avatar{
-    width: 148px;
-    height: 150px;
+    width: 194px;
+    height: 196px;
     border-radius: 50%;
     border: 2px solid #ccdfda;
     /* border: 8px outset #2e74b5; /* 8px outset rgb(89 114 128 / 63%) rgb(102 155 166) */
