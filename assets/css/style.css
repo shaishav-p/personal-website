@@ -42,7 +42,7 @@ body{
     
     max-width: max-content;
     margin: auto;
-	top-margin: 5vh;
+	margin-top: 5vh;
 
     /*change background color*/
     background: linear-gradient(-45deg, #123969, #10498f, #152c47, #0c9473);    /*https://codepen.io/P1N2O/pen/pyBNzX*/
