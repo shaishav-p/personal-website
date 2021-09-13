@@ -26,14 +26,6 @@
     .div.picture-and-summary{
         margin-bottom: 200px;
     }
-	
-	img.avatar{
-		width: 174px;
-		height: 176px;
-		border-radius: 50%;
-		border: 2px solid #ccdfda;
-		/* border: 8px outset #2e74b5; /* 8px outset rgb(89 114 128 / 63%) rgb(102 155 166) */
-	}
 
 }
 
