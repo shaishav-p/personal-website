@@ -33,7 +33,6 @@
 @keyframes wiggle {
     0%, 7% {
       transform: rotateZ(0);
-      color: #0c9473;
     }
     15% {
       transform: rotateZ(-25deg);
@@ -145,10 +144,14 @@ img.avatar:hover{
     color: #97bada;
 }
 
+.very-light-blue{
+    color: #d2e3eb;
+}
 .dark-blue{
     color: #2e74b5;
     font-weight: 500;
 }
+
 
 p.name{
     font-size: 50px;
@@ -175,6 +178,8 @@ p.name{
 
 .resume-logo{
   animation: wiggle 2.5s linear infinite;
+  color: #d2e3eb; /* .very-light-blue */
+
 }
 
 .logo:hover{
